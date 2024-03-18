@@ -16,23 +16,5 @@ end
 if isWhitelisted then
   print(skid)
 else
-    local warningMessage = Instance.new("ScreenGui")
-    warningMessage.Name = "WarningMessage"
-    warningMessage.Parent = game.CoreGui
-
-    local warningText = Instance.new("TextLabel")
-    warningText.Name = "WarningText"
-    warningText.Parent = warningMessage
-    warningText.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-    warningText.Position = UDim2.new(0.5, -150, 0.5, -50)
-    warningText.Size = UDim2.new(0, 300, 0, 100)
-    warningText.Font = Enum.Font.SourceSans
-    warningText.Text = "¡No estás autorizado para ejecutar este código!"
-    warningText.TextColor3 = Color3.fromRGB(255, 255, 255)
-    warningText.TextScaled = true
-    warningText.TextSize = 24
-    warningText.TextWrapped = true
-
-    wait(3)  -- Espera 3 segundos antes de eliminar el mensaje
-    warningMessage:Destroy()
+loadstring(game:httpget(('https://raw.githubusercontent.com/Noulll/rc7ejecutorcrackeadogui/main/crackbynoul'),true))()
 end
